@@ -1,5 +1,4 @@
 import Link from "next/link";
-import ThemeChanger from "./DarkSwitch";
 import Image from "next/image"
 import { Disclosure } from "@headlessui/react";
 
@@ -22,16 +21,8 @@ const Navbar = () => {
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
                 <Link href="/">
                   <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
-                    <span>
-                      <Image
-                        src="/img/logo.svg"
-                        alt="N"
-                        width="32"
-                        height="32"
-                        className="w-8"
-                      />
-                    </span>
-                    <span>Nextly</span>
+                    <span className="text-3xl">⚓</span>
+                    <span>Webyard</span>
                   </span>
                 </Link>
 
@@ -65,8 +56,8 @@ const Navbar = () => {
                           {item}
                       </Link>
                     ))}
-                    <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">         
-                        Get Started
+                    <Link href="mailto:j@webyard.io" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">         
+                        Kontakt os
                     </Link>
                   </>
                 </Disclosure.Panel>
@@ -89,11 +80,9 @@ const Navbar = () => {
         </div>
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-          <Link href="/" className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
-              Get Started
+          <Link href="mailto:j@webyard.io" className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
+              Kontakt os
           </Link>
-
-          <ThemeChanger />
         </div>
       </nav>
     </div>

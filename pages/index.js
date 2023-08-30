@@ -16,10 +16,10 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Nextly - Free Nextjs & TailwindCSS Landing Page Template</title>
+        <title>Webyard - Hurtig og pålidelig software udvikling</title>
         <meta
           name="description"
-          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
+          content="Webyard udvikler software i Ruby on Rails, JavaScript, React, Vue, Node, Python, Django, Flask og meget mere."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
