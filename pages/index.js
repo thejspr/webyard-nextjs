@@ -27,22 +27,22 @@ const Home = () => {
       <Navbar />
       <Hero />
       <SectionTitle
-        pretitle="Nextly Benefits"
-        title=" Why should you use this landing page">
+        pretitle="Webyard"
+        title="Hvorfor vælge Webyard?">
         Nextly is a free landing page & marketing website template for startups
         and indie projects. Its built with Next.js & TailwindCSS. And its
         completely open-source.
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
-      <SectionTitle
-        pretitle="Watch a video"
-        title="Learn how to fullfil your needs">
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don&apos;t forget to add one. Just like this.
-      </SectionTitle>
-      <Video />
+      {/* <SectionTitle */}
+      {/*   pretitle="Watch a video" */}
+      {/*   title="Learn how to fullfil your needs"> */}
+      {/*   This section is to highlight a promo or demo video of your product. */}
+      {/*   Analysts says a landing page with video has 3% more conversion rate. So, */}
+      {/*   don&apos;t forget to add one. Just like this. */}
+      {/* </SectionTitle> */}
+      {/* <Video /> */}
       <SectionTitle
         pretitle="Testimonials"
         title="Here's what our customers said">
@@ -57,7 +57,7 @@ const Home = () => {
       <Faq />
       <Cta />
       <Footer />
-      <PopupWidget />
+      {/* <PopupWidget /> */}
     </>
   );
 }
