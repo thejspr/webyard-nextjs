@@ -17,7 +17,7 @@ const Hero = () => {
               Hurtig og Pålidelig Software Udvikling
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-              Webyard tilbyder software udvikling i Ruby on Rails, Python, Django, Flask, JavaScript, React, Vue, Node, og meget mere.
+              Webyard tilbyder software udvikling i Ruby on Rails, Python, React, Node, og meget mere.
             </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
