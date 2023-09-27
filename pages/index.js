@@ -1,16 +1,16 @@
 import Head from "next/head";
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
-import SectionTitle from "../components/sectionTitle";
+// import SectionTitle from "../components/sectionTitle";
 
-import { benefitOne, benefitTwo } from "../components/data";
-import Video from "../components/video";
-import Benefits from "../components/benefits";
-import Footer from "../components/footer";
-import Testimonials from "../components/testimonials";
-import Cta from "../components/cta";
-import Faq from "../components/faq";
-import PopupWidget from "../components/popupWidget";
+// import { benefitOne, benefitTwo } from "../components/data";
+// import Video from "../components/video";
+// import Benefits from "../components/benefits";
+// import Footer from "../components/footer";
+// import Testimonials from "../components/testimonials";
+// import Cta from "../components/cta";
+// import Faq from "../components/faq";
+// import PopupWidget from "../components/popupWidget";
 
 const Home = () => {
   return (
@@ -21,18 +21,21 @@ const Home = () => {
           name="description"
           content="Webyard udvikler software i Ruby on Rails, JavaScript, React, Vue, Node, Python, Django, Flask og meget mere."
         />
-        <link rel="icon" href="/favicon.ico" />
+
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚓</text></svg>"></link>
+
+        <script defer data-domain="webyard.dk" src="https://plausible.io/js/script.js"></script>
       </Head>
 
       <Navbar />
       <Hero />
-      <SectionTitle
-        pretitle="Webyard"
-        title="Hvorfor vælge Webyard?">
-        Vi hjælper med udvikling i en lang række web-teknologier, herunder Ruby on Rails, JavaScript, React, Vue, Node, Python, Django, Flask og meget mere.
-      </SectionTitle>
-      <Benefits data={benefitOne} />
-      <Benefits imgPos="right" data={benefitTwo} />
+      {/* <SectionTitle */}
+      {/*   pretitle="Webyard" */}
+      {/*   title="Hvorfor vælge Webyard?"> */}
+      {/*   Vi hjælper med udvikling i en lang række web-teknologier, herunder Ruby on Rails, JavaScript, React, Vue, Node, Python, Django, Flask og meget mere. */}
+      {/* </SectionTitle> */}
+      {/* <Benefits data={benefitOne} /> */}
+      {/* <Benefits imgPos="right" data={benefitTwo} /> */}
       {/* <SectionTitle */}
       {/*   pretitle="Watch a video" */}
       {/*   title="Learn how to fullfil your needs"> */}
@@ -54,7 +57,7 @@ const Home = () => {
       {/* </SectionTitle> */}
       {/* <Faq /> */}
       {/* <Cta /> */}
-      <Footer />
+      {/* <Footer /> */}
       {/* <PopupWidget /> */}
     </>
   );
