@@ -56,6 +56,12 @@ const Navbar = () => {
                           {item}
                       </Link>
                     ))}
+                    <Link href="https://it-opgave.dk" className="">         
+                      IT-Opgaver.dk
+                    </Link>
+                    <Link href="https://thejspr.com" className="">         
+                      Blog
+                    </Link>
                     <Link href="mailto:j@webyard.io" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">         
                         Kontakt os
                     </Link>
@@ -79,7 +85,13 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="hidden mr-3 space-x-4 lg:flex nav__item">
+        <div className="hidden mr-3 space-x-4 lg:flex nav__item items-center">
+          <Link href="https://it-opgave.dk" className="px-6">
+            IT-Opgaver.dk
+          </Link>
+          <Link href="https://thejspr.com" className="px-6">
+            Blog
+          </Link>
           <Link href="mailto:j@webyard.io" className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
               Tag kontakt
           </Link>
