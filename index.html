@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webyard - Hurtig og pålidelig software udvikling</title>
+  <meta name="description" content="Webyard udvikler software i Ruby on Rails, JavaScript, React, Vue, Node, Python, Django, Flask og meget mere.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚓</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+  <script defer data-domain="webyard.dk" src="https://plausible.io/js/script.js"></script>
+</head>
+<body class="dark:bg-trueGray-900">
+  <!-- Navbar -->
+  <div class="w-full">
+    <nav class="container relative flex flex-wrap items-center justify-between p-12 mx-auto lg:justify-between xl:px-0">
+      <!-- Logo -->
+      <div class="flex flex-wrap items-center justify-between w-full lg:w-auto">
+        <a href="/">
+          <span class="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
+            <span class="text-3xl">⚓</span>
+            <span>Webyard</span>
+          </span>
+        </a>
+        
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-button" aria-label="Toggle Menu" class="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700">
+          <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path id="menu-icon" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+            <path id="close-icon" class="hidden" fill-rule="evenodd" clip-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/>
+          </svg>
+        </button>
+
+        <!-- Mobile menu panel -->
+        <div id="mobile-menu" class="hidden flex-wrap w-full my-5 lg:hidden">
+          <a href="https://it-opgave.dk" class="block w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none">
+            IT-Opgaver.dk
+          </a>
+          <a href="https://thejspr.com" class="block w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none">
+            Blog
+          </a>
+          <a href="mailto:j@webyard.dk" class="block w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">
+            Kontakt os
+          </a>
+        </div>
+      </div>
+
+      <!-- Desktop menu -->
+      <div class="hidden mr-3 space-x-4 lg:flex nav__item items-center">
+        <a href="https://it-opgave.dk" class="px-6">
+          IT-Opgaver.dk
+        </a>
+        <a href="https://thejspr.com" class="px-6">
+          Blog
+        </a>
+        <a href="mailto:j@webyard.dk" class="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
+          Tag kontakt
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="container p-8 mx-auto xl:px-0">
+    <div class="flex flex-wrap">
+      <div class="flex items-center w-full lg:w-1/2">
+        <div class="max-w-2xl mb-8">
+          <h1 class="text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
+            Hurtig og Pålidelig Software Udvikling
+          </h1>
+          <p class="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
+            Webyard tilbyder software udvikling i Ruby on Rails, Python, React, Node, og meget mere.
+          </p>
+
+          <div class="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
+            <a href="mailto:j@webyard.dk" target="_blank" rel="noopener" class="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md">
+              Tag kontakt
+            </a>
+            <a href="https://www.linkedin.com/in/jesperkjeldgaard/" target="_blank" rel="noopener" class="flex items-center space-x-2 text-gray-500 dark:text-gray-400">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22.23 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.2 0 22.23 0zM7.27 20.1H3.65V9.24h3.62V20.1zM5.47 7.76h-.03c-1.22 0-2-.83-2-1.87 0-1.06.8-1.87 2.05-1.87 1.24 0 2 .8 2.02 1.87 0 1.04-.78 1.87-2.05 1.87zM20.34 20.1h-3.63v-5.8c0-1.45-.52-2.45-1.83-2.45-1 0-1.6.67-1.87 1.32-.1.23-.11.55-.11.88v6.05H9.28s.05-9.82 0-10.84h3.63v1.54a3.6 3.6 0 0 1 3.26-1.8c2.39 0 4.18 1.56 4.18 4.89v6.21z"/>
+              </svg>
+              <span>Følg på LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center w-full lg:w-1/2 pt-[80px]">
+        <div>
+          <img src="public/img/illu-team.png" class="object-cover" alt="Hero Illustration">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Customer Logos Section -->
+  <div class="container p-8 mx-auto xl:px-0">
+    <div class="flex flex-col justify-center">
+      <div class="text-xl text-center text-gray-700 dark:text-white">
+        Udvalgte kunder
+      </div>
+
+      <div class="flex flex-wrap justify-center items-center gap-5 mt-10 md:justify-around">
+        <div>
+          <img src="public/img/logos/peanut.png" class="object-cover" alt="Peanut logo">
+        </div>
+        <div>
+          <img src="public/img/logos/gomore.png" class="object-cover" alt="GoMore logo">
+        </div>
+        <div>
+          <img src="public/img/logos/skyscanner.png" class="object-cover" alt="Skyscanner logo">
+        </div>
+        <div>
+          <img src="public/img/logos/housetrip.png" class="object-cover" alt="Housetrip logo">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    menuButton.addEventListener('click', function() {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('flex');
+      menuIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
